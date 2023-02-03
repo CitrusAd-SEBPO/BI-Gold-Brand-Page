@@ -226,6 +226,7 @@ p.citrusBi__disclaimer {
   padding: 0 30px;
   font-family: "PetcoCircularTT-Bold", arial !important;
   font-size: 13px;
+  font-weight: bold;
   text-align: center;
 }
 .citrusBi__featurePackage-title01 p,
@@ -266,15 +267,13 @@ p.citrusBi__disclaimer {
 .citrusBi__comparison__rowCta a {
   font-family: "PetcoCircularTT-Bold", arial !important;
   font-size: 16px;
+  font-weight: bold;
   color: #001952;
 }
 /* Shop FRONTLINE® Plus */
 .citrusBi__frontlineDog .citrusBi__frontline__cardBody {
   margin-top: 40px;
   margin-bottom: 40px;
-}
-.citrusBi__frontlineshop {
-  margin: 60px 0;
 }
 
 /* bottom hero */
@@ -428,12 +427,6 @@ p.citrusBi__disclaimer {
   }
   .citrusBi__CTAContainer a:hover {
     background: none;
-  }
-
-  /* slider arrow */
-  .citrusBi__frontlineShieldShopContainer .splide__arrows,
-  .citrusBi__shopProduct__tabs .splide__arrows {
-    display: none;
   }
 }
 
