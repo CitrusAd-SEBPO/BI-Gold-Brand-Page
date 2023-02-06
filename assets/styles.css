@@ -63,11 +63,11 @@ body {
   row-gap: 10px;
 }
 .citrusBi__logo {
-  width: 207px;
+  width: 125px;
   overflow: hidden;
 }
 .citrusBi__logo img {
-  width: 207px;
+  width: 125px;
   max-width: 100%;
 }
 .citrusBi__PovTitle {
@@ -94,6 +94,7 @@ body {
   color: #fff;
 }
 p.citrusBi__disclaimer {
+  margin: 0;
   font-family: "PetcoCircularTT-Regular", arial !important;
   font-size: 12px !important;
   color: #fff;
@@ -110,6 +111,7 @@ p.citrusBi__disclaimer {
 .citrusBi__sectionTitle {
   margin: 0;
   font-family: "PetcoCircularTT-Bold", arial !important;
+  color: #000000;
   font-weight: bold;
   font-size: 25px;
   text-align: center;
@@ -203,10 +205,12 @@ p.citrusBi__disclaimer {
 }
 .citrusBi__comparison__row .citrusBi__col-0 img,
 .citrusBi__comparison__row .citrusBi__col-1 img {
-  width: 215px;
+  width: 250px;
+  object-fit: contain;
 }
 .citrusBi__comparison__row .citrusBi__col-2 img {
   width: 105px;
+  object-fit: contain;
 }
 .citrusBi__comparison__rowTitle,
 .citrusBi__comparison__rowText {
@@ -279,7 +283,7 @@ p.citrusBi__disclaimer {
 /* bottom hero */
 .citrusBi__bottomHeroContainer {
   width: 1100px;
-  max-width: 100%;
+  max-width: 90%;
   margin: auto;
   background: #d8ebf547;
 }
@@ -301,11 +305,10 @@ p.citrusBi__disclaimer {
 .citrusBi__bottomHero-right {
   padding: 0 20px;
 }
-.citrusBi__bottomHero-right .citrusBi__sectionTitle {
-  color: #001952;
-}
 .citrusBi__bottomHero-right .citrusBi__text {
-  color: #001952;
+  font-family: "PetcoCircularTT-Regular", arial !important;
+  font-size: 16px;
+  color: #000000;
   text-align: center;
 }
 .citrusBi__CTAContainer {
@@ -333,12 +336,14 @@ p.citrusBi__disclaimer {
 /* bottom hero disclaimer */
 .citrusBi__bottomHeroDisclaimer {
   width: 868px;
-  max-width: 95%;
+  max-width: 90%;
   margin: auto;
   text-align: center;
 }
 .citrusBi__bottomHeroDisclaimer p {
+  margin: 10px 0;
   font-family: "PetcoCircularTT-Regular", arial !important;
+  color: #000;
   font-size: 12px;
   line-height: 20px;
 }
@@ -352,9 +357,48 @@ p.citrusBi__disclaimer {
 
 /*----------------------------------- responsive styling------------------------------------- */
 @media all and (min-width: 922px) and (max-width: 1200px) {
+  .citrusBi__PovTextContainer-fluid {
+    top: 10%;
+  }
+  .citrusBi__PovTextContainer {
+    height: 100%;
+    row-gap: 8px;
+  }
+  .citrusBi__logo {
+    width: 115px;
+  }
+  .citrusBi__PovTitle {
+    margin: 0;
+    font-size: 25px;
+  }
+  .citrusBi__PovCTA a {
+    font-size: 14px;
+    padding: 10px 24px 8px;
+  }
 }
 
 @media all and (min-width: 769px) and (max-width: 921px) {
+  .citrusBi__PovTextContainer-fluid {
+    top: 5%;
+  }
+  .citrusBi__PovTextContainer {
+    height: 100%;
+    row-gap: 8px;
+  }
+  .citrusBi__logo {
+    width: 85px;
+  }
+  .citrusBi__PovTitle {
+    margin: 0;
+    font-size: 20px;
+  }
+  .citrusBi__PovCTA a {
+    font-size: 14px;
+    padding: 8px 14px 5px;
+  }
+  .citrusBi__PovTextContainer-fluid p.citrusBi__disclaimer {
+    margin-top: 0;
+  }
 }
 @media all and (max-width: 768px) {
   /* common styling */
@@ -364,33 +408,37 @@ p.citrusBi__disclaimer {
   .citrusBi_mobile__hide {
     display: none;
   }
+  .citrusBi__sectionTitle {
+    font-size: 20px;
+    padding: 0 20px;
+  }
   /* hero / pov */
   .citrusBi__PovTextContainer-fluid {
+    bottom: 0;
   }
   .citrusBi__PovTextContainer {
     height: 100%;
-    row-gap: 20px;
-  }
-  .citrusBi__logo {
-    width: 139px;
-  }
-  .citrusBi__PovTitle {
-    font-size: 26px;
+    justify-content: end;
+    row-gap: 10px;
   }
   .citrusBi__PovCTA a {
     padding: 0;
     background: none;
-    color: #001952;
+    color: #fff;
     text-transform: capitalize;
     text-decoration: underline;
   }
   .citrusBi__PovCTA a:hover {
     background: none;
   }
-
+  p.citrusBi__disclaimer {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
   /* front line */
 
   .citrusBi__frontline_row {
+    margin-top: 30px;
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 0px;
   }
@@ -398,16 +446,32 @@ p.citrusBi__disclaimer {
   .citrusBi__frontline_video iframe {
     height: 368px;
   }
+  .citrusBi__frontline_video.order1 {
+    order: 2;
+  }
+  .citrusBi__frontline_card.order2 {
+    order: 1;
+  }
 
   /* Comparison Chart / Find the right solution for your pet  */
-
+  .citrusBi__comparisonContainer {
+    width: 875px;
+    padding-left: 5%;
+  }
+  .citrusBi__comparison__row {
+    grid-template-columns: repeat(3, 1fr);
+  }
   /* frontline shield for dog */
   .citrusBi__frontline_card {
-    margin-top: 20px;
+    margin-top: 0px;
+  }
+  .citrusBi__frontline__cardBody p.citrusBi__disclaimer {
+    margin-top: 10px;
   }
 
   /* bottom hero */
   .citrusBi__bottomHero-row {
+    padding: 30px 0 15px;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0px;
   }
@@ -429,6 +493,20 @@ p.citrusBi__disclaimer {
     background: none;
   }
 }
-
 @media all and (max-width: 520px) {
+  .citrusBi__logo {
+    width: 75px;
+  }
+  .citrusBi__PovTitle {
+    margin: 0;
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 360px) {
+  .citrusBi__PovTextContainer {
+    row-gap: 5px;
+  }
+  p.citrusBi__disclaimer {
+    margin-bottom: 15px;
+  }
 }
