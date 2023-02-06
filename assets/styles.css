@@ -274,6 +274,12 @@ p.citrusBi__disclaimer {
   font-weight: bold;
   color: #001952;
 }
+#citrusBi__comparisonContainer-fluid p.citrusBi__disclaimer {
+  margin: auto;
+  width: 868px;
+  max-width: 100%;
+  color: #000;
+}
 /* Shop FRONTLINE® Plus */
 .citrusBi__frontlineDog .citrusBi__frontline__cardBody {
   margin-top: 40px;
