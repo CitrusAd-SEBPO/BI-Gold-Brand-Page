@@ -294,6 +294,7 @@ p.citrusBi__disclaimer {
   font-size: 16px;
   font-weight: bold;
   color: #001952;
+  text-decoration: underline;
 }
 #citrusBi__comparisonContainer-fluid p.citrusBi__disclaimer {
   margin: auto;
